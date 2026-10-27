@@ -138,9 +138,17 @@ body{background:#fff;color:#080808}
 .advisor-message-section .founder-profile-column{align-items:stretch!important}
 .advisor-message-section .founder-profile-column>.profile-socials{display:flex!important;flex-wrap:wrap;justify-content:center!important;align-items:center!important;align-self:stretch!important;width:100%!important;max-width:none!important;box-sizing:border-box!important;margin:16px 0 0!important;padding:0!important;grid-column:auto!important;justify-self:auto!important}
 
-/* About Us only: Naranjan's five icons sit in one centered row with the standard 16px gap. */
-#editorialBoardMessages .founder-message-layout>.profile-socials{grid-column:1!important;grid-row:2!important;display:grid!important;grid-template-columns:repeat(5,42px)!important;justify-content:center!important;justify-self:center!important;align-self:start!important;align-items:center!important;gap:10px 12px!important;width:max-content!important;max-width:100%!important;margin:16px auto 0!important;position:static!important;transform:none!important;left:auto!important;right:auto!important;box-sizing:border-box!important}
-#editorialBoardMessages .founder-message-layout>.profile-socials .profile-social-icon:nth-child(5){grid-column:auto!important;justify-self:auto!important}
+
+/* About Us: use one consistent portrait-and-social column for every editorial profile. */
+.editorial-board-messages .founder-message-layout>.founder-profile-column{grid-column:1!important;grid-row:1!important;width:100%;max-width:330px;justify-self:center;display:flex;flex-direction:column;align-items:center;min-width:0}
+.editorial-board-messages .founder-profile-column>.founder-profile{width:100%;max-width:330px;justify-self:auto}
+.editorial-board-messages .founder-profile-column>.profile-socials{display:flex!important;flex-wrap:wrap;justify-content:center!important;align-items:center!important;align-self:stretch!important;width:100%!important;max-width:100%!important;box-sizing:border-box!important;gap:10px 12px!important;margin:16px 0 0!important;padding:0!important;transform:none!important;position:static!important;grid-column:auto!important;grid-row:auto!important;justify-self:stretch!important}
+.editorial-board-messages .founder-message-layout>.founder-message-card{grid-column:2!important;grid-row:1!important}
+@media(max-width:740px){
+ .editorial-board-messages .founder-message-layout>.founder-profile-column{grid-column:1!important;grid-row:1!important;max-width:300px;width:100%;margin:0 auto}
+ .editorial-board-messages .founder-message-layout>.founder-message-card{grid-column:1!important;grid-row:2!important}
+}
+
 </style>
 </head>
 <body>
@@ -219,6 +227,7 @@ body{background:#fff;color:#080808}
   <div class="founder-message-inner">
     <h2>Message from the Editorial Board</h2>
     <div class="founder-message-layout">
+      <div class="founder-profile-column">
       <figure class="founder-profile">
         <img src="https://raw.githubusercontent.com/warismustafa-coding/wmwrites-website/main/Indivituals%20Data/Narajan%20Das/Image/Edited%20and%20Zoomed%20Image/Image%201%20-%20Edited%20and%20Zoomed%20-%20Naranjan%20Das.jpg" alt="Naranjan Das, Editorial Board Member of WMwrites">
         <figcaption><strong>Naranjan Das</strong><span>Editorial Board Member</span></figcaption>
@@ -230,6 +239,7 @@ body{background:#fff;color:#080808}
 <a class="profile-social-icon" href="https://www.x.com/iamnaranjan" target="_blank" rel="noopener noreferrer" aria-label="Naranjan Das on X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-5-7.5L5.4 22H2.2l7.3-8.4L1.8 2h6.4l4.5 6.9zm-1.1 18h1.7L7.3 3.9H5.5z" fill="currentColor"/></svg></a>
 <a class="profile-social-icon" href="https://www.instagram.com/iamnaranjan" target="_blank" rel="noopener noreferrer" aria-label="Naranjan Das on Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.7" cy="6.6" r="1.1" fill="currentColor"/></svg></a>
 </div>
+      </div>
       <article class="founder-message-card">
         <h3>Message from Naranjan Das</h3>
         <p>In a region as linguistically rich as Sindh, language should be a bridge, never a barrier. That conviction drew me to WMwrites and its guiding principle of simple discourse: the belief that profound ideas are most meaningful when expressed with clarity, and that literature and linguistics should be accessible to every learner, not merely to those who have mastered the ornate registers of academia.</p>
@@ -238,6 +248,7 @@ body{background:#fff;color:#080808}
       </article>
     </div>
     <div class="founder-message-layout editorial-member-layout">
+      <div class="founder-profile-column">
       <figure class="founder-profile">
         <img src="https://raw.githubusercontent.com/warismustafa-coding/wmwrites-website/main/Indivituals%20Data/Kazbano%20Gul/Image/Edited%20and%20Zoomed%20Image/Image%202%20-%20Edited%20and%20Zoomed%20-%20Kazbano%20Gul.jpg" alt="Kazbano Gul, Editorial Board Member of WMwrites">
         <figcaption><strong>Kazbano Gul</strong><span>Editorial Board Member</span></figcaption>
@@ -246,6 +257,7 @@ body{background:#fff;color:#080808}
         <a class="profile-social-icon" href="mailto:kazbanogull@gmail.com" aria-label="Email Kazbano Gul" title="Email Kazbano Gul"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h13A2.5 2.5 0 0 1 21 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m4 6 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <a class="profile-social-icon" href="https://www.linkedin.com/in/kazbano-gull-59b4a0244?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios" target="_blank" rel="noopener noreferrer" aria-label="Kazbano Gul on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5H2.5V21H5zM3.75 3A1.5 1.5 0 1 0 3.75 6a1.5 1.5 0 0 0 0-3ZM9 8.5h2.4v1.7h.04A2.63 2.63 0 0 1 13.8 8.3c2.55 0 3.2 1.68 3.2 3.86V21h-2.5v-7.83c0-1.18-.02-2.7-1.65-2.7-1.66 0-1.91 1.3-1.91 2.62V21H8.5V8.5z" fill="currentColor"/></svg></a>
         <a class="profile-social-icon" href="https://www.instagram.com/literarylifeof_kaz?vrfl=c3RhMWdzN3J5NmMx&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Kazbano Gul on Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.7" cy="6.6" r="1.1" fill="currentColor"/></svg></a>
+      </div>
       </div>
       <article class="founder-message-card">
         <h3>Message from Kazbano Gul</h3>
