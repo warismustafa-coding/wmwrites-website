@@ -85,6 +85,10 @@ body{background:#fff;color:#080808}
 .founder-message-inner{max-width:1410px;margin:0 auto}
 .founder-message-inner>h2{text-align:center;font-size:clamp(2rem,3.6vw,3rem);line-height:1.15;letter-spacing:-.025em;margin:0 auto 44px;font-weight:800;width:100%;display:block}
 .founder-message-layout{display:grid;grid-template-columns:minmax(220px,27%) minmax(0,1fr);align-items:start;gap:34px}
+.editorial-member-layout .founder-profile{grid-column:1;grid-row:1}
+.editorial-member-layout .profile-socials{grid-column:1;grid-row:2;margin:0 auto;align-self:start}
+.editorial-member-layout .founder-message-card{grid-column:2;grid-row:1 / span 2}
+@media(max-width:740px){.editorial-member-layout .founder-profile{grid-column:1;grid-row:1}.editorial-member-layout .profile-socials{grid-column:1;grid-row:2}.editorial-member-layout .founder-message-card{grid-column:1;grid-row:3}}
 .founder-profile{width:100%;max-width:330px;justify-self:center;margin:0;overflow:hidden;border-radius:14px;background:#f1f1f1;color:#080808;border:1px solid #e5e5e5;box-shadow:0 10px 26px rgba(0,0,0,.10)}
 .founder-profile img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center}
 .founder-profile figcaption{padding:18px 16px 20px;text-align:center;display:flex;flex-direction:column;gap:7px;background:linear-gradient(180deg,#f4f4f4 0%,#eaeaea 100%)}
